@@ -1,10 +1,20 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import SlideUp from "./SlideUp";
+import MyComponent from "./MyComponent";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Text>!</Text>
+      <SlideUp
+        openedHeight={200}
+        closedHeight={32}
+        openDistance={40}
+        closeDistance={4}
+      >
+        <MyComponent />
+      </SlideUp>
     </View>
   );
 }
@@ -12,8 +22,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center"
+  }
 });
